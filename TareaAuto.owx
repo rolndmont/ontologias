@@ -1,0 +1,708 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/rolando/ontologies/2025/11/untitled-ontology-14"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/rolando/ontologies/2025/11/untitled-ontology-14">
+    <Prefix name="" IRI="http://www.semanticweb.org/rolando/ontologies/2025/11/untitled-ontology-14/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Auto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conductor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mecanico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotorElectrico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotorGasolina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MotorHibrido"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persona"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#conduce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#repara"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneMotor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#autonomiaElectrica"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#caballosFuerza"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capacidadBateria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cilindrada"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneColor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneEspecialidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneExperiencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneModelo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tienePrecio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#torque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antonio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Martin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MotorCadillacV6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MotorTeslaModelS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cadillac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tesla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#toyota"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Conductor"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mecanico"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotorElectrico"/>
+        <Class IRI="#Motor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotorGasolina"/>
+        <Class IRI="#Motor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MotorHibrido"/>
+        <Class IRI="#Motor"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Mecanico"/>
+        <NamedIndividual IRI="#Antonio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#Antonio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mecanico"/>
+        <NamedIndividual IRI="#Martin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#Martin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motor"/>
+        <NamedIndividual IRI="#MotorCadillacV6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MotorGasolina"/>
+        <NamedIndividual IRI="#MotorCadillacV6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motor"/>
+        <NamedIndividual IRI="#MotorTeslaModelS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MotorElectrico"/>
+        <NamedIndividual IRI="#MotorTeslaModelS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Motor"/>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MotorHibrido"/>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Auto"/>
+        <NamedIndividual IRI="#cadillac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Auto"/>
+        <NamedIndividual IRI="#tesla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Auto"/>
+        <NamedIndividual IRI="#toyota"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneMotor"/>
+        <NamedIndividual IRI="#cadillac"/>
+        <NamedIndividual IRI="#MotorCadillacV6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneMotor"/>
+        <NamedIndividual IRI="#tesla"/>
+        <NamedIndividual IRI="#MotorTeslaModelS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneMotor"/>
+        <NamedIndividual IRI="#toyota"/>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#caballosFuerza"/>
+        <NamedIndividual IRI="#MotorCadillacV6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">335</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cilindrada"/>
+        <NamedIndividual IRI="#MotorCadillacV6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#torque"/>
+        <NamedIndividual IRI="#MotorCadillacV6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#autonomiaElectrica"/>
+        <NamedIndividual IRI="#MotorTeslaModelS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#caballosFuerza"/>
+        <NamedIndividual IRI="#MotorTeslaModelS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">670</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacidadBateria"/>
+        <NamedIndividual IRI="#MotorTeslaModelS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#torque"/>
+        <NamedIndividual IRI="#MotorTeslaModelS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#autonomiaElectrica"/>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#caballosFuerza"/>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">181</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacidadBateria"/>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cilindrada"/>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#torque"/>
+        <NamedIndividual IRI="#MotorToyotaHybrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">190</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneColor"/>
+        <NamedIndividual IRI="#cadillac"/>
+        <Literal>cereza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePrecio"/>
+        <NamedIndividual IRI="#cadillac"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneColor"/>
+        <NamedIndividual IRI="#tesla"/>
+        <Literal>blanco</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePrecio"/>
+        <NamedIndividual IRI="#tesla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneColor"/>
+        <NamedIndividual IRI="#toyota"/>
+        <Literal>rojo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePrecio"/>
+        <NamedIndividual IRI="#toyota"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900000</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#conduce"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#repara"/>
+        <Class IRI="#Mecanico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#repara"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneMotor"/>
+        <Class IRI="#Auto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#conduce"/>
+        <Class IRI="#Auto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#repara"/>
+        <Class IRI="#Auto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneMotor"/>
+        <Class IRI="#Motor"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#tieneColor"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#tieneEspecialidad"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#tieneExperiencia"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#tieneModelo"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#autonomiaElectrica"/>
+        <Class IRI="#Motor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#caballosFuerza"/>
+        <Class IRI="#Motor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#capacidadBateria"/>
+        <Class IRI="#Motor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cilindrada"/>
+        <Class IRI="#Motor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneColor"/>
+        <Class IRI="#Auto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEspecialidad"/>
+        <Class IRI="#Mecanico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEspecialidad"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneExperiencia"/>
+        <Class IRI="#Mecanico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneExperiencia"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneModelo"/>
+        <Class IRI="#Auto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tienePrecio"/>
+        <Class IRI="#Auto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#torque"/>
+        <Class IRI="#Motor"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#autonomiaElectrica"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#caballosFuerza"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#capacidadBateria"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cilindrada"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneColor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneEspecialidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneExperiencia"/>
+        <Datatype abbreviatedIRI="xsd:byte"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneModelo"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tienePrecio"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#torque"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Auto(?a)-&gt;sqwrl:select(?a)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>all_Autos</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Auto"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/a"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Auto(?a) ^ tieneMotor(?a, ?m) ^ MotorElectrico(?m) → sqwrl:select(?a, ?m)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AutosMotorElectrico</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Auto"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneMotor"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/m"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#MotorElectrico"/>
+                <Variable IRI="/m"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/a"/>
+                <Variable IRI="/m"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Auto(?a) ^ tieneMotor(?a, ?m) ^ caballosFuerza(?m, ?hp) -&gt; sqwrl:select(?a, ?m, ?hp)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Auto_tipoMotor_HP</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Auto"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneMotor"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/m"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#caballosFuerza"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/hp"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/a"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/hp"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Auto(?a) ^ tienePrecio(?a, ?precio) ^ tieneMotor(?a, ?m) ^ caballosFuerza(?m, ?hp) ^ swrlb:greaterThan(?hp, 300) ^ swrlb:lessThan(?precio, 1500000) -&gt; sqwrl:select(?a, ?precio, ?hp)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>autosPorRangoPrecio_Potencia</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Auto"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tienePrecio"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/precio"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneMotor"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/m"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#caballosFuerza"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/hp"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/hp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/precio"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3100000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/a"/>
+                <Variable IRI="/precio"/>
+                <Variable IRI="/hp"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Auto(?a) ^ tieneMotor(?a, ?m) ^ caballosFuerza(?m, ?hp) ^ swrlb:greaterThan(?hp, 500) → sqwrl:select(?a, ?hp)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Auto_&gt;500HP</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Auto"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneMotor"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/m"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#caballosFuerza"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/hp"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/hp"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/a"/>
+                <Variable IRI="/hp"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Auto(?a) ^ tieneMotor(?a, ?m) ^ torque(?m, ?t) ^ swrlb:greaterThan(?t, 500) -&gt; sqwrl:select(?a, ?t)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Autos_torque &gt;500Nm</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Auto"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneMotor"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/m"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#torque"/>
+                <Variable IRI="/m"/>
+                <Variable IRI="/t"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/t"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/a"/>
+                <Variable IRI="/t"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Auto(?a)^tienePrecio(?a,?p)-&gt;sqwrl:select(?a,?p)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>precio_autos</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Auto"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tienePrecio"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/p"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/a"/>
+                <Variable IRI="/p"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Auto(?a)^tienePrecio(?a,?p)^swrlb:lessThan(?p,910000)-&gt;sqwrl:select(?a,?p)</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>precio_&lt;910000</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Auto"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tienePrecio"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/p"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">910000</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/a"/>
+                <Variable IRI="/p"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
